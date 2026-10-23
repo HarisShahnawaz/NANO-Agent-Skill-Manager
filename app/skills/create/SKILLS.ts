@@ -1,4 +1,4 @@
-type Skill = {
+export type Skill = {
     id: string;
     name: string;
     description: string;
@@ -8,7 +8,7 @@ type Skill = {
 
 }
 
-export const SKILLS: Skill[] = [
+export let SKILLS: Skill[] = [
     {
         id: '1',
         name: 'Web Search 1',
@@ -25,5 +25,15 @@ export const SKILLS: Skill[] = [
         createdAt: '2022-01-01',
         updatedAt: '2022-01-01'
     },
+];
 
-]
+
+export function getSkills() {
+    return [...SKILLS]
+}
+
+export function addSkill(skill: Skill) {
+    SKILLS = [...SKILLS, skill];
+    console.log('skills updated', SKILLS);
+
+}
