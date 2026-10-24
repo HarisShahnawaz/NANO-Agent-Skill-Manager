@@ -20,4 +20,3 @@ export default async function SkillsPage({ params }: {
     <div>Not found</div>
   );
 }
-//comment
