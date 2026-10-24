@@ -1,11 +1,10 @@
-'use client'
 
-import { useParams } from "next/navigation";
-import { Skill, getSkills } from "../create/SKILLS";
-import { useState, useEffect } from "react";
+import { getSkills } from "../create/SKILLS";
 
-export default async function SkillsPage() {
-  const params = useParams<{ identifier: string }>()
+
+export default async function SkillsPage({ params }: {
+  params: { identifier: string }
+}) {
 
   const skills = await getSkills()
   const skill = skills.find((skill) => skill.id === params.identifier)
