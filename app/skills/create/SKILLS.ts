@@ -32,8 +32,10 @@ export async function getSkills() {
     return [...SKILLS]
 }
 
-export function addSkill(skill: Skill) {
+export async function addSkill(skill: Skill) {
+    await new Promise((resolve) => setTimeout(resolve, 3000));
     SKILLS = [...SKILLS, skill];
     console.log('skills updated', SKILLS);
+    return getSkills()
 
 }
