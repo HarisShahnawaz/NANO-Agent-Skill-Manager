@@ -1,9 +1,9 @@
 import Link from "next/link"
-import { SKILLS } from "./create/SKILLS"
+import { SKILLS, getSkills } from "./create/SKILLS"
 
 
-export default function SkillsPage() {
-  const skills = SKILLS
+export default async function SkillsPage() {
+  const skills = await getSkills()
   return <section>
     <h1>Skills</h1>
     <Link href="/skills/create">Create Skill</Link>

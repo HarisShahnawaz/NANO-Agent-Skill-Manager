@@ -28,7 +28,7 @@ export let SKILLS: Skill[] = [
 ];
 
 
-export function getSkills() {
+export async function getSkills() {
     return [...SKILLS]
 }
 
