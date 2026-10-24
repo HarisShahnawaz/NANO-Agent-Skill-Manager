@@ -1,6 +1,4 @@
-
 import { getSkills } from "../create/SKILLS";
-
 
 export default async function SkillsPage({ params }: {
   params: { identifier: string }
@@ -22,4 +20,4 @@ export default async function SkillsPage({ params }: {
     <div>Not found</div>
   );
 }
-
+//comment
