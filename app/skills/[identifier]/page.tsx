@@ -17,6 +17,6 @@ export default async function SkillsPage({ params }: {
       <p> {skill?.createdAt}</p>
       <p> {skill?.updatedAt}</p>
     </article>) : (
-    <div>Not found</div>
+    <div>Skill Not found</div>
   );
 }
