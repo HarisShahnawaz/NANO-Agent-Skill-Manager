@@ -20,3 +20,4 @@ export default async function SkillsPage({ params }: {
     <div>Skill Not found</div>
   );
 }
+//skill management
