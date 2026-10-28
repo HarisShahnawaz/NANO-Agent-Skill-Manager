@@ -39,4 +39,3 @@ export async function addSkill(skill: Skill) {
     return getSkills()
 
 }
-//comment
