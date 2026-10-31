@@ -20,3 +20,4 @@ export default function Header() {
         </div>
     );
 }
+//header page using daisyui
