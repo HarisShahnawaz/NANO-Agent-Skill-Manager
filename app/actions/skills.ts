@@ -27,3 +27,4 @@ export async function createSkill(prevState: any, formData: FormData) {
     revalidatePath("/skills");
     redirect("/skills");
 }
+// skills
