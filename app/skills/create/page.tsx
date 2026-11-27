@@ -25,4 +25,5 @@ export default function NewSkillPage() {
         </form>
     );
 }
-///comment
+
+//commment
